@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import * as AWSCognito from 'amazon-cognito-identity-js';
+//import * as AWSCognito from 'amazon-cognito-identity-js';
 
 @Component({
   selector: 'app-login',
@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*
   authentication() {
 
     const authenticationData = {
@@ -25,11 +26,11 @@ export class LoginComponent implements OnInit {
     // Later on
     const userPool = new AWSCognito.CognitoUserPool(authenticationData);
     const authDetails = new AWSCognito.AuthenticationDetails({
-      Username: 'testusername',//this.state.username,
-      Password: 'testpassword'//this.state.password
+      Username: 'testusername',
+      Password: 'testpassword'
     });
     const cognitoUser = new AWSCognito.CognitoUser({
-      Username: 'testusername',//this.state.username,
+      Username: 'testusername',
       Pool: userPool
     });
     cognitoUser.authenticateUser(authDetails, {
@@ -40,7 +41,7 @@ export class LoginComponent implements OnInit {
         alert(err);
       }
     });
-  }
+  }*/
 
 
 
